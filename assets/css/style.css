@@ -893,6 +893,7 @@ a {
 	-o-object-fit: cover;
 	max-height: 45.5rem;
 	object-fit: cover;
+	width: 100%;
 }
 
 .p-topScene__col {
