@@ -828,7 +828,6 @@ a {
 .p-topScene__topImgSvg {
 	height: 12.3rem;
 	max-width: 118.2rem;
-	width: 100%;
 }
 
 .p-topScene__heading {
@@ -945,7 +944,7 @@ a {
 	letter-spacing: 0.08rem;
 	line-height: 3rem;
 	position: relative;
-	white-space: nowrap;
+	white-space: normal;
 }
 
 .p-topScene__colTextDt::after {
