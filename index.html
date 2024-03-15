@@ -51,9 +51,9 @@
 				</a>
 			</h1>
 			<nav class="p-header__nav">
-				<ul id="js-openbtn-left" class="p-header__list">
+				<ul class="p-header__list">
 					<li class="p-header__listItem--mlNone">
-						<div class="p-header__listItemBox">
+						<div id="js-openbtn-left" class="p-header__listItemBox">
 							<p class="p-header__listItemBoxText">
 								家具
 							</p>
@@ -63,7 +63,7 @@
 						</div>
 					</li>
 					<li class="p-header__listItem">
-						<div class="p-header__listItemBox">
+						<div id="js-openbtn-right" class="p-header__listItemBox">
 							<p class="p-header__listItemBoxText">
 								家電
 							</p>
@@ -73,7 +73,7 @@
 						</div>
 					</li>
 				</ul>
-				<ul id="js-openbtn-right" class="p-header__list">
+				<ul class="p-header__list">
 					<li class="p-header__listItem--spMlNone">
 						<a href="#" class="p-header__listItemLink  u-dispNone--PU">法人のお客様へ</a>
 						<a href="#" class="p-header__listItemLink  u-dispNone--PO">
@@ -96,9 +96,9 @@
 			</nav>
 			<nav id="js-g-nav" class="p-headerHam__nav">
 				<div class="l-inner">
-					<div js="js-hamLeft" class="p-headerHam__navWrap">
+					<div id="js-ham-left" class="p-headerHam__navWrap js-noneLeft">
 						<p class="p-headerHam__navTtl">家具</p>
-						<ul class="p-headerHam__navList">
+						<ul id="js-ham-left-inner" class="p-headerHam__navList">
 							<li class="p-headerHam__navItem">
 								<a href="#" class="p-headerHam__navLink">
 									すべて
@@ -173,9 +173,9 @@
 							</li>
 						</ul>
 					</div>
-					<div id="js-hamRight" class="p-headerHam__navWrap">
+					<div id="js-ham-right" class="p-headerHam__navWrap js-noneRight">
 						<p class="p-headerHam__navTtl">家電</p>
-						<ul class="p-headerHam__navList">
+						<ul id="js-hamRight-inner" class="p-headerHam__navList">
 							<li class="p-headerHam__navItem">
 								<a href="#" class="p-headerHam__navLink">
 									すべて

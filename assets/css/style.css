@@ -355,20 +355,9 @@ a {
 	width: 0;
 }
 
-#js-hamLeft {
+.js-noneLeft,
+.js-noneRight {
 	display: none;
-}
-
-#js-hamLeft.is-active {
-	display: block;
-}
-
-#js-hamRight {
-	display: none;
-}
-
-#js-hamRight.is-active {
-	display: block;
 }
 
 #js-g-nav {
@@ -384,8 +373,14 @@ a {
 	overflow: hidden;
 }
 
-#js-g-nav.is-active .p-header__listItemIcon {
-	transform: rotate(90deg);
+#js-openbtn-left.is-active .p-header__listItemIcon,
+#js-openbtn-right.is-active .p-header__listItemIcon {
+	transform: rotate(180deg);
+}
+
+#js-openbtn-left .p-header__listItemIcon,
+#js-openbtn-right .p-header__listItemIcon {
+	transform: rotate(0deg);
 }
 
 .p-topMv {
