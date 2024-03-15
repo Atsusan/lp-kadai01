@@ -889,6 +889,10 @@ a {
 	top: -3rem;
 }
 
+.p-topScene__mainImg {
+	max-height: 45.5rem;
+}
+
 .p-topScene__col {
 	display: flex;
 	gap: 2.7rem;
