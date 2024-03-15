@@ -509,18 +509,19 @@ a {
 }
 
 .p-topCta__pointItem {
+	align-items: center;
 	background-color: #565956;
 	border-radius: 1.6rem;
 	color: #fff;
-	display: grid;
+	display: flex;
 	font-size: 1.6rem;
 	font-weight: 700;
 	height: 100%;
+	justify-content: center;
 	letter-spacing: 0.064rem;
 	line-height: 2.4rem;
 	max-width: 19.2rem;
 	min-height: 5.6rem;
-	place-items: center;
 	width: 100%;
 }
 
@@ -533,16 +534,17 @@ a {
 }
 
 .p-topCta__bottomPoint {
+	align-items: center;
 	background-color: #f2f4f1;
-	display: grid;
+	display: flex;
 	font-size: 2rem;
 	font-weight: 700;
+	justify-content: center;
 	letter-spacing: 0.08rem;
 	line-height: 3rem;
 	margin-right: 1.4rem;
 	max-width: 26rem;
 	min-height: 6rem;
-	place-items: center;
 	position: relative;
 	width: 100%;
 }
@@ -596,18 +598,19 @@ a {
 }
 
 .p-topValue__listItemHeading {
+	align-items: center;
 	background-color: #948260;
 	color: #fff;
-	display: grid;
+	display: flex;
 	font-family: "Jost", sans-serif;
 	font-size: 2rem;
 	font-weight: 600;
+	justify-content: center;
 	letter-spacing: 0.08rem;
 	line-height: 3rem;
 	margin: 0 auto;
 	max-width: 14.4rem;
 	min-height: 3.8rem;
-	place-items: center;
 	width: 100%;
 }
 
@@ -696,18 +699,19 @@ a {
 }
 
 .p-topVoice__listItemHeadTag {
+	align-items: center;
 	background-color: #609484;
 	color: #fff;
-	display: grid;
+	display: flex;
 	font-family: "Jost", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 600;
+	justify-content: center;
 	left: 0;
 	letter-spacing: 0.064rem;
 	line-height: 2.4rem;
 	max-width: 12.2rem;
 	min-height: 4rem;
-	place-items: center;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -1135,17 +1139,18 @@ a {
 }
 
 .p-topFeatures__listItemRightTag {
+	align-items: center;
 	background-color: #948260;
 	color: #fff;
-	display: grid;
+	display: flex;
 	font-family: "Jost", sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
+	justify-content: center;
 	letter-spacing: 0.08rem;
 	line-height: 3rem;
 	min-height: 3.8rem;
 	padding: 0 1.6rem;
-	place-items: center;
 	width: -moz-fit-content;
 	width: fit-content;
 }
