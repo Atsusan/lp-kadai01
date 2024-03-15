@@ -890,7 +890,9 @@ a {
 }
 
 .p-topScene__mainImg {
+	-o-object-fit: cover;
 	max-height: 45.5rem;
+	object-fit: cover;
 }
 
 .p-topScene__col {
