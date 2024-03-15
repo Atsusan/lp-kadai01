@@ -1927,7 +1927,7 @@ a {
 	margin: 0 1.6rem;
 	padding: 3rem 2.4rem;
 	text-align: center;
-	white-space: wrap;
+	white-space: normal;
 }
 
 .p-topScene__topImgSvg {
