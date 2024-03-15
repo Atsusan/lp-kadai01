@@ -447,8 +447,16 @@ a {
 .p-topCta {
 	background: url(../images/cta-fontBg.png) no-repeat center center/cover;
 	height: 100%;
+	margin: 0 auto;
+	max-width: 144rem;
 	min-height: 50rem;
 	padding: 4.8rem 1.6rem;
+	width: 100%;
+}
+
+.p-topCta__bigWrap {
+	background-color: #f2f4f1;
+	height: 100%;
 	width: 100%;
 }
 
