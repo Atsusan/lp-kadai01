@@ -944,7 +944,7 @@ a {
 	letter-spacing: 0.08rem;
 	line-height: 3rem;
 	position: relative;
-	white-space: normal;
+	white-space: nowrap;
 }
 
 .p-topScene__colTextDt::after {
