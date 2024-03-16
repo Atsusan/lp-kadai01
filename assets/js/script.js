@@ -8,6 +8,7 @@ jQuery(function () {
   });
 });
 
+// header nav
 // 左側のメニューボタンがクリックされたときの処理
 jQuery("#js-openbtn-left").click(function () {
   resetClasses();
