@@ -10,6 +10,7 @@ jQuery(function () {
 
 // 左側のメニューボタンがクリックされたときの処理
 jQuery("#js-openbtn-left").click(function () {
+  resetClasses();
   toggleClassesLeft();
   resetClassesRight();
 });
@@ -26,6 +27,7 @@ jQuery("#js-g-nav").click(function () {
 
 // 右側のメニューボタンがクリックされたときの処理
 jQuery("#js-openbtn-right").click(function () {
+  resetClasses();
   toggleClassesRight();
   resetClassesLeft();
 });
