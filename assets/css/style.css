@@ -1970,6 +1970,7 @@ a {
 }
 
 .p-topScene__colTextArea {
+	margin: 0 auto;
 	padding: 0 1.6rem 3.2rem;
 	width: 100%;
 }
@@ -2035,6 +2036,8 @@ a {
 
 .p-topFaq__container {
 	gap: 2.4rem;
+	justify-content: center;
+	justify-content: center;
 	margin-top: 3.2rem;
 }
 
