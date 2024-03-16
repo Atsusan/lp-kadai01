@@ -828,6 +828,7 @@ a {
 .p-topScene__topImgSvg {
 	height: 12.3rem;
 	max-width: 118.2rem;
+	width: 100%;
 }
 
 .p-topScene__heading {
