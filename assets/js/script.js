@@ -13,6 +13,7 @@ jQuery(function () {
 jQuery("#js-openbtn-left").click(function () {
   if (jQuery("#js-openbtn-left").hasClass("is-active")) {
     resetClasses();
+    resetClassesLeft();
   } else {
     resetClasses();
     toggleClassesLeft();
@@ -24,6 +25,7 @@ jQuery("#js-openbtn-left").click(function () {
 jQuery("#js-openbtn-right").click(function () {
   if (jQuery("#js-openbtn-right").hasClass("is-active")) {
     resetClasses();
+    resetClassesRight();
   } else {
     resetClasses();
     toggleClassesRight();
