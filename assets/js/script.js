@@ -11,9 +11,24 @@ jQuery(function () {
 // header nav
 // 左側のメニューボタンがクリックされたときの処理
 jQuery("#js-openbtn-left").click(function () {
-  resetClasses();
-  toggleClassesLeft();
-  resetClassesRight();
+  if (jQuery("#js-openbtn-left").hasClass("is-active")) {
+    resetClasses();
+  } else {
+    resetClasses();
+    toggleClassesLeft();
+    resetClassesRight();
+  }
+});
+
+// 右側のメニューボタンがクリックされたときの処理
+jQuery("#js-openbtn-right").click(function () {
+  if (jQuery("#js-openbtn-right").hasClass("is-active")) {
+    resetClasses();
+  } else {
+    resetClasses();
+    toggleClassesRight();
+    resetClassesLeft();
+  }
 });
 
 // 左側のメニュー内のリンクがクリックされたときの処理
@@ -24,13 +39,6 @@ jQuery("#js-hamLeft-inner a").click(function () {
 // メニュー部分がクリックされたときの処理
 jQuery("#js-g-nav").click(function () {
   resetClasses();
-});
-
-// 右側のメニューボタンがクリックされたときの処理
-jQuery("#js-openbtn-right").click(function () {
-  resetClasses();
-  toggleClassesRight();
-  resetClassesLeft();
 });
 
 function toggleClassesLeft() {
