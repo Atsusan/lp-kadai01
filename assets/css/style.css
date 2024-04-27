@@ -65,6 +65,10 @@ figcaption {
 	display: block;
 }
 
+button {
+	background-color: transparent;
+}
+
 img {
 	border: none;
 	vertical-align: bottom;
@@ -178,12 +182,13 @@ a {
 .p-header {
 	align-items: center;
 	display: flex;
-	min-height: 6.95rem;
+	height: 6.95rem;
 }
 
 .p-header__inner {
 	align-items: center;
 	display: flex;
+	height: 100%;
 	justify-content: center;
 	width: 100%;
 }
@@ -199,12 +204,14 @@ a {
 .p-header__nav {
 	align-items: center;
 	display: flex;
+	height: 100%;
 	margin-left: auto;
 }
 
 .p-header__list {
 	align-items: center;
 	display: flex;
+	height: 100%;
 	justify-content: center;
 }
 
@@ -216,18 +223,14 @@ a {
 .p-header__listItem--spMlNone,
 .p-header__listItem--mlLarge,
 .p-header__listItem--mlNone {
+	align-items: center;
 	cursor: pointer;
+	display: flex;
 	font-weight: 700;
+	height: 100%;
 	letter-spacing: 0.064rem;
 	margin-left: 3.2rem;
 	transition: color 0.3s;
-}
-
-.p-header__listItem:hover,
-.p-header__listItem--spMlNone:hover,
-.p-header__listItem--mlLarge:hover,
-.p-header__listItem--mlNone:hover {
-	color: #b1b6af;
 }
 
 .p-header__listItem--mlNone {
@@ -243,10 +246,19 @@ a {
 }
 
 .p-header__listItemBox {
+	height: 100%;
+}
+
+.p-header__listItemButton {
 	align-items: center;
 	display: flex;
 	gap: 0.8rem;
+	height: 100%;
 	justify-content: center;
+}
+
+.p-header__listItemBoxText {
+	transition: color 0.2s;
 }
 
 .p-header__listItemIcon {
@@ -255,14 +267,6 @@ a {
 	height: 1.6rem;
 	transition: all 0.3s;
 	width: 1.6rem;
-}
-
-.p-header__listItem:hover .p-header__listItemIcon,
-.p-header__listItem--mlNone:hover .p-header__listItemIcon,
-.p-header__listItem--mlLarge:hover .p-header__listItemIcon,
-.p-header__listItem--spMlNone:hover .p-header__listItemIcon {
-	fill: #b1b6af;
-	transform: rotate(180deg);
 }
 
 .p-header__listItemLink,
@@ -289,15 +293,20 @@ a {
 }
 
 .p-headerHam__nav {
-	background: rgba(86, 89, 86, 0.56);
-	height: 100vh;
-	opacity: 0;
-	overflow: hidden;
-	position: fixed;
+	left: 50%;
+	max-width: 1180px;
+	padding-top: 17px;
+	position: absolute;
 	top: 6.95rem;
+	transform: translateX(-50%);
 	transition: opacity 0.4s;
-	width: 100%;
+	visibility: hidden;
+	width: calc(100% - 110px);
 	z-index: 100;
+}
+
+.js-megaMenu:hover .p-headerHam__nav {
+	visibility: visible;
 }
 
 .p-headerHam__navWrap {
@@ -306,6 +315,11 @@ a {
 	border-radius: 0.8rem;
 	margin-top: 1.7rem;
 	padding: 2.4rem 4rem;
+	visibility: hidden;
+}
+
+.js-megaMenu:hover .p-headerHam__navWrap {
+	visibility: visible;
 }
 
 .p-headerHam__navTtl {
@@ -355,32 +369,23 @@ a {
 	width: 0;
 }
 
-.js-noneLeft,
-.js-noneRight {
-	display: none;
+.p-megaMenu-bg {
+	background: rgba(86, 89, 86, 0.56);
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 6.95rem;
+	transition: all 0.3s;
+	visibility: hidden;
+	width: 100%;
+	z-index: 10;
 }
 
-#js-g-nav {
-	pointer-events: none;
-}
-
-#js-g-nav.is-open {
+.js-megaMenu:hover + .p-megaMenu-bg,
+.js-megaMenu:focus-within + .p-megaMenu-bg {
 	opacity: 1;
-	pointer-events: all;
-}
-
-#js-body.is-active {
-	overflow: hidden;
-}
-
-#js-openbtn-left.is-active .p-header__listItemIcon,
-#js-openbtn-right.is-active .p-header__listItemIcon {
-	transform: rotate(180deg);
-}
-
-#js-openbtn-left .p-header__listItemIcon,
-#js-openbtn-right .p-header__listItemIcon {
-	transform: rotate(0deg);
+	visibility: visible;
 }
 
 .p-topMv {
@@ -1496,6 +1501,25 @@ a {
 	opacity: 0.5;
 }
 
+.p-header__listItem--spMlNone:hover {
+	color: #b1b6af;
+}
+
+.p-header__listItem:hover .p-header__listItemBoxText,
+.p-header__listItem--mlNone:hover .p-header__listItemBoxText,
+.p-header__listItem--mlLarge:hover .p-header__listItemBoxText,
+.p-header__listItem--spMlNone:hover .p-header__listItemBoxText {
+	color: #b1b6af;
+}
+
+.p-header__listItem:hover .p-header__listItemIcon,
+.p-header__listItem--mlNone:hover .p-header__listItemIcon,
+.p-header__listItem--mlLarge:hover .p-header__listItemIcon,
+.p-header__listItem--spMlNone:hover .p-header__listItemIcon {
+	fill: #b1b6af;
+	transform: rotate(180deg);
+}
+
 .p-header__listItemLink--borderRadius {
 	transition: all 0.3s;
 }
@@ -1685,7 +1709,7 @@ a {
 }
 
 .p-header {
-	min-height: 4.8rem;
+	height: 4.8rem;
 }
 
 .p-header__logo {
@@ -1710,7 +1734,7 @@ a {
 	margin-left: 0;
 }
 
-.p-header__listItemBox {
+.p-header__listItemButton {
 	gap: 0.4rem;
 }
 
@@ -1727,6 +1751,7 @@ a {
 
 .p-headerHam__nav {
 	top: 4.8rem;
+	width: calc(100% - 32px);
 }
 
 .p-headerHam__navWrap {
@@ -1751,6 +1776,10 @@ a {
 
 .p-headerHam__navLink {
 	min-width: auto;
+}
+
+.p-megaMenu-bg {
+	top: 4.8rem;
 }
 
 .p-topMv {
