@@ -251,6 +251,7 @@ a {
 
 .p-header__listItemButton {
 	align-items: center;
+	color: inherit;
 	display: flex;
 	gap: 0.8rem;
 	height: 100%;
